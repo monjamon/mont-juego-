@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Lentes Delgados</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 { margin-bottom: 10px; font-size: 1.5rem; }
+        .controls { margin-top: 10px; text-align: center; }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover { background-color: #45a049; }
+        p { font-size: 0.9rem; color: #ccc; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+</head>
+<body>
+
+    <h1>Simulador de Óptica: Lentes Delgados</h1>
+    <div id="canvas-container"></div>
+    
+    <div class="controls">
+        <button onclick="toggleLens()">Cambiar Lente (Convergente/Divergente)</button>
+        <p>Mueve el mouse horizontalmente para mover el objeto.</p>
+    </div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
